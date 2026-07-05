@@ -1,13 +1,13 @@
 # Architecture
 
-This document describes the module layout, data flow, and key decisions behind Sundial.
+This document describes the module layout, data flow, and key decisions behind Gloaming.
 
 ## Module map
 
 ```
-Sundial/
+Gloaming/
 ├── App/
-│   └── SundialApp.swift          # @main, MenuBarExtra scene; skips Scheduler.activate() under test
+│   └── GloamingApp.swift          # @main, MenuBarExtra scene; skips Scheduler.activate() under test
 ├── Menu/
 │   ├── MenuBarView.swift         # menu contents, live "… until HH:MM" label
 │   └── MenuBarIcon.swift         # SF Symbol selection by current appearance/enabled state
@@ -26,12 +26,12 @@ Sundial/
 │   ├── LaunchAtLogin.swift       # SMAppService wrapper
 │   └── LaunchAtLoginToggle.swift # the shared toggle view used by menu + settings
 ├── Assets.xcassets               # AppIcon (regenerate via `just icon`)
-└── Sundial.entitlements          # Hardened Runtime + location; no App Sandbox
+└── Gloaming.entitlements          # Hardened Runtime + location; no App Sandbox
 ```
 
 `SolarCalculator`, `TransitionPlanner`, and `Appearance` are `nonisolated` and free of
 AppKit/CoreLocation — they're pure functions over `Date`/coordinates, which is what makes them
-cheap to unit test in `SundialTests`.
+cheap to unit test in `GloamingTests`.
 
 ## Data flow
 
@@ -90,7 +90,7 @@ and re-evaluate on the next day-change trigger rather than busy-polling.
 
 - **Hand-written, synchronized `project.pbxproj` instead of XcodeGen.** The plan suggested
   XcodeGen/Tuist for reproducibility; we use Xcode 16's `PBXFileSystemSynchronizedRootGroup`
-  folders instead. Any `.swift` file dropped into `Sundial/` or `SundialTests/` auto-joins its
+  folders instead. Any `.swift` file dropped into `Gloaming/` or `GloamingTests/` auto-joins its
   target, the pbxproj stays tiny and diff-friendly, and there's no extra generator dependency or
   generation step to keep in sync.
 - **Apple `swift-format` instead of Nick Lockwood's SwiftFormat.** It ships with Xcode, needs no
@@ -98,7 +98,7 @@ and re-evaluate on the next day-change trigger rather than busy-polling.
   SwiftLint remains for idiom/style rules that formatting alone doesn't cover.
 - **Hosted Swift Testing target, guarded by `XCTestConfigurationFilePath`.** Running tests in-app
   (rather than a separate logic-only target) lets tests exercise `@MainActor` types directly; the
-  guard in `SundialApp` keeps `Scheduler.activate()` from ever running under test, so test runs
+  guard in `GloamingApp` keeps `Scheduler.activate()` from ever running under test, so test runs
   can't flip the real system appearance or prompt for location/TCC permissions.
 - **Hardened Runtime is Debug-off, Release-on.** Debug needs it off so Xcode/the test host can
   inject the test bundle; Release turns it on because notarization requires it. The SkyLight

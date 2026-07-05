@@ -1,6 +1,6 @@
 //
 //  LaunchAtLoginToggle.swift
-//  Sundial
+//  Gloaming
 //
 //  The shared "Launch at Login" toggle used by both the menu and the settings window.
 //

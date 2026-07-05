@@ -1,6 +1,6 @@
 //
 //  LaunchAtLogin.swift
-//  Sundial
+//  Gloaming
 //
 //  SMAppService wrapper backing the "Launch at Login" toggles.
 //

@@ -1,6 +1,6 @@
 //
 //  TransitionPlanner.swift
-//  Sundial
+//  Gloaming
 //
 //  Pure decision layer: turns sun times + offsets into a desired appearance and the next boundary.
 //

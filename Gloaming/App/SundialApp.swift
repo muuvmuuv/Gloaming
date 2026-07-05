@@ -1,6 +1,6 @@
 //
-//  SundialApp.swift
-//  Sundial
+//  GloamingApp.swift
+//  Gloaming
 //
 //  @main entry point: builds the object graph and hosts the menu-bar and settings scenes.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct SundialApp: App {
+struct GloamingApp: App {
 	@State private var settings: SettingsStore
 	@State private var location: LocationProvider
 	@State private var scheduler: Scheduler

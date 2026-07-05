@@ -1,6 +1,6 @@
 //
 //  LocationProvider.swift
-//  Sundial
+//  Gloaming
 //
 //  CoreLocation wrapper: one-shot fix + significant-change monitoring, with a cached last fix.
 //

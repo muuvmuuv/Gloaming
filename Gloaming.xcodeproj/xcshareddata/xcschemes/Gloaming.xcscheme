@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AB0000000000000000000040"
-               BuildableName = "Sundial.app"
-               BlueprintName = "Sundial"
-               ReferencedContainer = "container:Sundial.xcodeproj">
+               BuildableName = "Gloaming.app"
+               BlueprintName = "Gloaming"
+               ReferencedContainer = "container:Gloaming.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AB0000000000000000000041"
-               BuildableName = "SundialTests.xctest"
-               BlueprintName = "SundialTests"
-               ReferencedContainer = "container:Sundial.xcodeproj">
+               BuildableName = "GloamingTests.xctest"
+               BlueprintName = "GloamingTests"
+               ReferencedContainer = "container:Gloaming.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AB0000000000000000000040"
-            BuildableName = "Sundial.app"
-            BlueprintName = "Sundial"
-            ReferencedContainer = "container:Sundial.xcodeproj">
+            BuildableName = "Gloaming.app"
+            BlueprintName = "Gloaming"
+            ReferencedContainer = "container:Gloaming.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -74,9 +74,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AB0000000000000000000040"
-            BuildableName = "Sundial.app"
-            BlueprintName = "Sundial"
-            ReferencedContainer = "container:Sundial.xcodeproj">
+            BuildableName = "Gloaming.app"
+            BlueprintName = "Gloaming"
+            ReferencedContainer = "container:Gloaming.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

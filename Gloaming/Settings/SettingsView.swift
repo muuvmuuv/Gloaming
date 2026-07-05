@@ -1,6 +1,6 @@
 //
 //  SettingsView.swift
-//  Sundial
+//  Gloaming
 //
 //  Single-pane settings: location, offsets, launch-at-login, and credits.
 //
@@ -64,7 +64,7 @@ struct SettingsView: View {
 
 			Section {
 				VStack(alignment: .leading, spacing: 8) {
-					Text("Sundial \(appVersion)")
+					Text("Gloaming \(appVersion)")
 						.foregroundStyle(.secondary)
 					// The credit line required verbatim by the product plan (README carries it too).
 					Text(
@@ -78,7 +78,7 @@ struct SettingsView: View {
 					)
 					Text(
 						"Set the macOS Appearance to Light or Dark (not Auto) in System Settings so "
-							+ "macOS's own scheduler doesn't fight Sundial."
+							+ "macOS's own scheduler doesn't fight Gloaming."
 					)
 					.font(.caption)
 					.foregroundStyle(.secondary)

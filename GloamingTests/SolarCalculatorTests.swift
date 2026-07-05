@@ -1,6 +1,6 @@
 //
 //  SolarCalculatorTests.swift
-//  SundialTests
+//  GloamingTests
 //
 //  Known-coordinate sunrise/sunset checks and polar edge cases for the NOAA calculator.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import Testing
 
-@testable import Sundial
+@testable import Gloaming
 
 private let sixMinutes: TimeInterval = 6 * 60
 

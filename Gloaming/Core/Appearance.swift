@@ -1,8 +1,8 @@
 //
 //  Appearance.swift
-//  Sundial
+//  Gloaming
 //
-//  The two system-wide appearances Sundial switches between.
+//  The two system-wide appearances Gloaming switches between.
 //
 
 /// A system appearance mode. Raw values match the persisted / logged spelling.

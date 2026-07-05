@@ -6,7 +6,7 @@ pre-commit:
   commands:
     format:
       glob: "*.swift"
-      run: swift format lint --strict --recursive Sundial SundialTests
+      run: swift format lint --strict --recursive Gloaming GloamingTests
     swiftlint:
       glob: "*.swift"
       run: swiftlint --quiet --strict

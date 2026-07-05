@@ -1,6 +1,6 @@
 //
 //  TransitionPlannerTests.swift
-//  SundialTests
+//  GloamingTests
 //
 //  Window / offset / boundary semantics for the pure transition planner.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import Testing
 
-@testable import Sundial
+@testable import Gloaming
 
 @Suite struct TransitionPlannerTests {
 	// Berlin.

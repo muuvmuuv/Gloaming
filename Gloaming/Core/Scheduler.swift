@@ -1,6 +1,6 @@
 //
 //  Scheduler.swift
-//  Sundial
+//  Gloaming
 //
 //  The brain: decides and applies the desired appearance, and schedules the next transition.
 //
@@ -71,7 +71,7 @@ import OSLog
 			observe(.default, name: name) { [weak self] in self?.refresh() }
 		}
 
-		// Posted after the system appearance actually changed — including changes made outside Sundial
+		// Posted after the system appearance actually changed — including changes made outside Gloaming
 		// (System Settings, other apps). Only sync the published value; automation is not re-run, so a
 		// user flipping appearance elsewhere is not immediately fought.
 		let themeChanged = Notification.Name("AppleInterfaceThemeChangedNotification")

@@ -1,6 +1,6 @@
 //
 //  SettingsStore.swift
-//  Sundial
+//  Gloaming
 //
 //  Observable, UserDefaults-backed user preferences.
 //

@@ -1,6 +1,6 @@
 //
 //  SolarCalculator.swift
-//  Sundial
+//  Gloaming
 //
 //  Self-contained NOAA low-precision sunrise/sunset calculator (no network, no Foundation astronomy APIs).
 //

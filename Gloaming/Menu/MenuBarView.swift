@@ -1,6 +1,6 @@
 //
 //  MenuBarView.swift
-//  Sundial
+//  Gloaming
 //
 //  Menu-bar dropdown: live status header plus the lean set of controls.
 //
@@ -40,7 +40,7 @@ struct MenuBarView: View {
 
 		Divider()
 
-		Button("Quit Sundial") {
+		Button("Quit Gloaming") {
 			NSApp.terminate(nil)
 		}
 		.keyboardShortcut("q")

@@ -1,8 +1,8 @@
 //
 //  generate-appicon.swift
-//  Sundial
+//  Gloaming
 //
-//  Standalone script (not part of the app target): renders the Sundial app icon and writes it
+//  Standalone script (not part of the app target): renders the Gloaming app icon and writes it
 //  into an .appiconset. Run via `just icon`, i.e. `swift scripts/generate-appicon.swift <dir>`.
 //
 

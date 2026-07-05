@@ -1,8 +1,8 @@
 //
 //  Logger.swift
-//  Sundial
+//  Gloaming
 //
-//  OSLog categories for Sundial's subsystems.
+//  OSLog categories for Gloaming's subsystems.
 //
 
 import Foundation
@@ -10,7 +10,7 @@ import OSLog
 
 /// App-wide logging categories, one `Logger` per subsystem area.
 nonisolated enum Log {
-	private static let subsystem = Bundle.main.bundleIdentifier ?? "digital.marvin.Sundial"
+	private static let subsystem = Bundle.main.bundleIdentifier ?? "digital.marvin.Gloaming"
 
 	static let appearance = Logger(subsystem: subsystem, category: "appearance")
 	static let location = Logger(subsystem: subsystem, category: "location")

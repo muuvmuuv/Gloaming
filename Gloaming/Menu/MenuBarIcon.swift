@@ -1,6 +1,6 @@
 //
 //  MenuBarIcon.swift
-//  Sundial
+//  Gloaming
 //
 //  Menu-bar glyph reflecting the current appearance and automation state.
 //

@@ -1,6 +1,6 @@
 //
 //  AppearanceController.swift
-//  Sundial
+//  Gloaming
 //
 //  Reads and sets the system-wide appearance via a private SkyLight symbol, with an osascript fallback.
 //
