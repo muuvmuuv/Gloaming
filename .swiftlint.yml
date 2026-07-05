@@ -1,0 +1,19 @@
+excluded:
+  - .build
+  - build
+  - DerivedData
+  - scripts
+
+line_length:
+  warning: 120
+  error: 160
+
+identifier_name:
+  min_length: 2
+  allowed_symbols: ["_"]
+
+# swift-format owns whitespace/indentation/commas; SwiftLint focuses on idioms.
+disabled_rules:
+  - trailing_whitespace
+  - trailing_comma
+  - todo
