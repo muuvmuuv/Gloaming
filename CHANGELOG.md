@@ -11,6 +11,8 @@ repo directly.
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-07-06
+
 ### Added
 
 - Initial implementation: menu-bar app that switches system-wide Light/Dark appearance from
