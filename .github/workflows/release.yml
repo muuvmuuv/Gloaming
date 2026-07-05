@@ -14,6 +14,11 @@ jobs:
     # so this needs a runner image that ships it.
     runs-on: macos-26
 
+    # The tag-gated GitHub Release step creates a release and uploads the DMG, which the default
+    # read-only GITHUB_TOKEN cannot do. Grant just contents: write (least privilege).
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v5
 
